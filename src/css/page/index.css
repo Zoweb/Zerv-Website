@@ -1,0 +1,59 @@
+@import "../index.css";
+
+body {
+    overflow-x: hidden;
+    background: var(--colour-dark);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    bottom: calc(0 - var(--nav-height));
+
+    margin-bottom: 0;
+    z-index: 3;
+
+    background: transparent;
+}
+
+header {
+    height: calc(var(--nav-height) * 2 + 2em + 168px);
+
+    position: relative;
+
+    z-index: 0;
+
+    background: var(--colour-dark);
+
+    .logo {
+        margin-top: calc(var(--nav-height) + 2em);
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+main {
+    margin: 0;
+    padding: 1em calc(var(--display-margin) + 1em);
+
+    background: var(--background-colour);
+
+    position: relative;
+    z-index: 2;
+
+    .features-grid {
+        display: grid;
+
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .hello-world .grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
