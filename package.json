@@ -15,6 +15,6 @@
     "typescript": "^3.2.2"
   },
   "scripts": {
-    "now-build": "parcel build *.html --out-dir ../dist"
+    "now-build": "parcel build src/*.html"
   }
 }
