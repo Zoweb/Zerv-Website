@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zerv Docs</title>
+
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body class="-theme -colour blue -lightness light">
+<div id="app">
+
+    <nav id="navbar">
+        <section class="title">
+            <a href="/index.html">{{app.name}}</a>
+        </section>
+
+        <section class="right-section">
+            <section>
+                <span><a href="/getting-started.html">Getting Started</a></span>
+            </section>
+            <section>
+                <span>Modules</span>
+
+                <ul class="dropdown">
+                    <li><a href="template-engine.html">Template Engine</a></li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+
+    <main>
+        <h1>404!</h1>
+        <p>This page does not exist yet.</p>
+    </main>
+
+    <footer>
+        <p class="get-started"><a href="getting-started.html">Get Started</a></p>
+        <div class="grid">
+            <h4>Documentation</h4>
+            <p><a href="getting-started.html">Getting Started</a></p>
+            <p><a href="#template-engine.html">Template Engine</a></p>
+            <p><a href="#component-engine.html">Component Engine</a></p>
+            <h4>Links</h4>
+            <p><a href="https://github.com/zoweb/zerv">Github</a></p>
+            <p><a href="https://npmjs.org/package/@zerv/frontend">npm</a></p>
+        </div>
+
+        <p class="copyright">Copyright &copy; {{copyright.year}} {{copyright.name}}. This website is open source.</p>
+    </footer>
+
+</div>
+<script src="app.ts"></script>
+</body>
+</html>
