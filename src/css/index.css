@@ -79,6 +79,10 @@ li {
     color: var(--solid-light);
 }
 
+main {
+    min-height: calc(100vh - var(--nav-height) - 20em);
+}
+
 footer {
     background: var(--colour-dark);
     color: var(--solid-light);
